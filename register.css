@@ -6,7 +6,6 @@
 	font-family: "PT Serif", serif;
 }
 body {
-	font-family: "PT Serif", serif;
 	background-color: #000;
 	color: #000;
 	display: flex;
@@ -17,27 +16,29 @@ body {
 	overflow: scroll;
 }
 .form-item {
+	padding-block: 2px;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: repeat(2,1fr);
 	grid-template-rows: auto auto;
 	justify-content: center;
 	background-color: transparent;
-	color: #fff;
 	gap: 20px;
+	margin: 20px 0 20px;
+	position: relative;
 }
 .form-item input {
 	background-color: transparent;
 	border: 0;
 	border-bottom: #fff solid;
-	font-size: 2vw;
-	margin: 20px 20px 10px 20px;
-	color: #fff;
+	color: #000;
+	display: block;
+	border-width: 0.1em;
+	font-size: 18px;
 }
 .container {
 	background-color: rgb(18, 167, 183);
 	padding: 30px 50px;
 	border-radius: 5px;
-	width: 75%;
 	display: block;
 }
 .container h1 {
@@ -50,23 +51,22 @@ body {
 .button {
 	cursor: pointer;
 	display: inline-block;
-	width: 10em;
+	width: 100%;
 	background: #add8e6;
 	padding: 15px;
-	margin: 10px 20px 20px 20px;
-	font-size: 15px;
 	border: 0;
 	border-radius: 5px;
-	/* font-family: "PT Serif", serif; */
-	font-size: 2vw;
+	font-size: 18px;
+}
+.btn{
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 .button:active {
 	transform: scale(0.98);
 }
 .text {
-	margin: 20px 20px 20px 20px;
-	color: #000;
-	font-size: 2vw;
+	margin-top: 0px;
 }
 ::placeholder {
 	color: #000;
