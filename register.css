@@ -32,6 +32,7 @@ body {
 	border-bottom: #fff solid;
 	color: #000;
 	display: block;
+	padding: 15px 0;
 	border-width: 0.1em;
 	font-size: 18px;
 }
