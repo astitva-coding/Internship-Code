@@ -16,16 +16,19 @@ body {
 	overflow: scroll;
 }
 .form-control {
+	display: grid;
+	grid-template-columns: repeat(auto-fit);
+	grid-template-rows: auto auto;
 	padding-block: 2px;
 	position: relative;
 	margin: 20px 0 40px;
-	width: 300px;
+	/* width: 300px; */
 }
 .form-control input {
 	background-color: transparent;
 	border: 0;
 	border-bottom: 2px #fff solid;
-	display: block;
+	/* display: block; */
 	width: 100%;
 	padding: 15px 0;
 	font-size: 18px;
@@ -64,4 +67,19 @@ body {
 }
 ::placeholder {
 	color: #000;
+}
+.icon-email{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 0px;
+}
+.social{
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0 7px;
+	gap: 10px;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
 }
